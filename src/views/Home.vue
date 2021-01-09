@@ -1,83 +1,52 @@
 <template>
   <body>
-    <!--====== PRELOADER PART START ======-->
-    <Preloader/> 
-    <!--====== PRELOADER PART ENDS ======-->
+    <Preloader />
 
     <div id="main">
+      <Header />
 
-      <!-- Header Start -->
-      <Header/>
-      <!-- Header End -->
+      <Slider />
 
-      <!-- Slider Arae Start -->
-      <Slider/>
-      <!-- Slider Arae End -->
+      <Static />
 
-      <!-- Static Area Start -->
-      <Static/>
-      <!-- Static Area End -->
+      <BestSeller />
 
-      <!-- Best Sells Area Start -->
-      <BestSeller/>
-      <!-- Best Sells Slider End -->
+      <Categories />
 
-      <!-- Category Area Start -->
-      <Categories/>
-      <!-- Category Area End  -->
+      <HotDeals />
 
-      <!-- Hot deal area Start -->
-      <HotDeals/>
-      <!-- Hot Deal Area End -->
+      <Banner />
 
-      <!-- Banner Area Start -->
-      <Banner/>
-      <!-- Banner Area End -->
+      <Featured />
 
-      <!-- Feature Area Start -->
-      <Featured/>
-      <!-- Feature Area End -->
+      <Banner2 />
 
-      <!-- Banner Area 2 Start -->
-      <Banner2/>
-      <!-- Banner Area 2 End -->
+      <Recent />
 
-      <!-- Recent Add Product Area Start -->
-      <Recent/>
-      <!-- Recent product area end -->
+      <Brand />
 
-      <!-- Brand area start -->
-      <Brand/>
-      <!-- Brand area end -->
-
-      <!-- Footer Area start -->
-      <Footer></Footer>
-      <!--  Footer Area End -->
+      <Footer/>
     </div>
 
-    <!-- Modal start -->
-    <Modal/>
-    <!-- Modal End -->
+    <Modal />
   </body>
 </template>
 
 <script>
-
-import Preloader from '@/components/Preloader.vue'
-import Header from '@/components/Header.vue'
-import Slider from '@/components/Slider.vue'
-import Static from '@/components/Static.vue'
-import BestSeller from '@/components/BestSeller.vue'
-import Categories from '@/components/Categories.vue'
-import HotDeals from '@/components/HotDeals.vue'
-import Banner from '@/components/Banner.vue'
-import Featured from '@/components/Featured.vue'
-import Banner2 from '@/components/Banner2.vue'
-import Recent from '@/components/Recent.vue'
-import Brand from '@/components/Brand.vue'
-import Footer from '@/components/Footer.vue'
-import Modal from '@/components/Modal.vue'
-
+import Preloader from "@/components/Preloader.vue";
+import Header from "@/components/Header.vue";
+import Slider from "@/components/Slider.vue";
+import Static from "@/components/Static.vue";
+import BestSeller from "@/components/BestSeller.vue";
+import Categories from "@/components/Categories.vue";
+import HotDeals from "@/components/HotDeals.vue";
+import Banner from "@/components/Banner.vue";
+import Featured from "@/components/Featured.vue";
+import Banner2 from "@/components/Banner2.vue";
+import Recent from "@/components/Recent.vue";
+import Brand from "@/components/Brand.vue";
+import Footer from "@/components/Footer.vue";
+import Modal from "@/components/Modal.vue";
 
 export default {
   name: "Home",
@@ -95,12 +64,10 @@ export default {
     Recent,
     Brand,
     Footer,
-    Modal
+    Modal,
   },
   data() {
-    return{
-      
-    }
+    return {};
   },
   created() {
     //load main script
@@ -112,7 +79,7 @@ export default {
 </script>
 
 <style scoped>
-  .bg-img1 {
-    background-image: url(/assets/images/slider-image/sample-1.jpg);
-  }
+.bg-img1 {
+  background-image: url(/assets/images/slider-image/sample-1.jpg);
+}
 </style>
