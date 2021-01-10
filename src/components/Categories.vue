@@ -5,179 +5,33 @@
         <div class="col-md-12">
           <!-- Section Title -->
           <div class="section-title mt-res-sx-30px mt-res-md-30px">
-            <h2>Popular Categories</h2>
-            <p>Add Popular Categories to weekly line up</p>
+            <h2>Catégories populaires</h2>
           </div>
           <!-- Section Title -->
         </div>
       </div>
       <!-- Category Slider Start -->
       <div class="category-slider owl-carousel owl-nav-style">
-        <!-- Single item -->
-        <div class="category-item">
+        
+        <div v-for="cat in categories" :key="cat" class="category-item">
           <div class="category-list mb-30px">
             <div class="category-thumb">
-              <a href="shop-4-column.html">
+              <a :href="cat.link">
                 <img
-                  src="assets/images/product-image/organic/thumb-1.jpg"
+                  :src="cat.img"
                   alt=""
                 />
               </a>
             </div>
             <div class="desc-listcategoreis">
               <div class="name_categories">
-                <h4>Fresh Vegetables</h4>
+                <h4>{{cat.name}}</h4>
               </div>
-              <span class="number_product">17 Products</span>
-              <a href="shop-4-column.html">
-                Shop Now <i class="ion-android-arrow-dropright-circle"></i
-              ></a>
-            </div>
-          </div>
-          <div class="category-list">
-            <div class="category-thumb">
-              <a href="shop-4-column.html">
-                <img
-                  src="assets/images/product-image/organic/thumb-2.jpg"
-                  alt=""
-                />
-              </a>
-            </div>
-            <div class="desc-listcategoreis">
-              <div class="name_categories">
-                <h4>Fresh Salad & Dips</h4>
-              </div>
-              <span class="number_product">17 Products</span>
-              <a href="shop-4-column.html">
-                Shop Now <i class="ion-android-arrow-dropright-circle"></i
-              ></a>
+              <span class="number_product"> {{cat.count}} Produits</span>
             </div>
           </div>
         </div>
-        <!-- Single item -->
-        <div class="category-item">
-          <div class="category-list mb-30px">
-            <div class="category-thumb">
-              <a href="shop-4-column.html">
-                <img
-                  src="assets/images/product-image/organic/thumb-3.jpg"
-                  alt=""
-                />
-              </a>
-            </div>
-            <div class="desc-listcategoreis">
-              <div class="name_categories">
-                <h4>Fresh Fruit</h4>
-              </div>
-              <span class="number_product">17 Products</span>
-              <a href="shop-4-column.html">
-                Shop Now <i class="ion-android-arrow-dropright-circle"></i
-              ></a>
-            </div>
-          </div>
-          <div class="category-list">
-            <div class="category-thumb">
-              <a href="shop-4-column.html">
-                <img
-                  src="assets/images/product-image/organic/thumb-4.jpg"
-                  alt=""
-                />
-              </a>
-            </div>
-            <div class="desc-listcategoreis">
-              <div class="name_categories">
-                <h4>Baking & Cooking</h4>
-              </div>
-              <span class="number_product">17 Products</span>
-              <a href="shop-4-column.html">
-                Shop Now <i class="ion-android-arrow-dropright-circle"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <!-- Single item -->
-        <div class="category-item">
-          <div class="category-list mb-30px">
-            <div class="category-thumb">
-              <a href="shop-4-column.html">
-                <img
-                  src="assets/images/product-image/organic/thumb-5.jpg"
-                  alt=""
-                />
-              </a>
-            </div>
-            <div class="desc-listcategoreis">
-              <div class="name_categories">
-                <h4>Fresh Cream & Custard</h4>
-              </div>
-              <span class="number_product">17 Products</span>
-              <a href="shop-4-column.html">
-                Shop Now <i class="ion-android-arrow-dropright-circle"></i
-              ></a>
-            </div>
-          </div>
-          <div class="category-list">
-            <div class="category-thumb">
-              <a href="shop-4-column.html">
-                <img
-                  src="assets/images/product-image/organic/thumb-6.jpg"
-                  alt=""
-                />
-              </a>
-            </div>
-            <div class="desc-listcategoreis">
-              <div class="name_categories">
-                <h4>Milk, Butter & Eggs</h4>
-              </div>
-              <span class="number_product">17 Products</span>
-              <a href="shop-4-column.html">
-                Shop Now <i class="ion-android-arrow-dropright-circle"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <!-- Single item -->
-        <div class="category-item">
-          <div class="category-list mb-30px">
-            <div class="category-thumb">
-              <a href="shop-4-column.html">
-                <img
-                  src="assets/images/product-image/organic/thumb-7.jpg"
-                  alt=""
-                />
-              </a>
-            </div>
-            <div class="desc-listcategoreis">
-              <div class="name_categories">
-                <h4>Spreads & Margarine</h4>
-              </div>
-              <span class="number_product">17 Products</span>
-              <a href="shop-4-column.html">
-                Shop Now <i class="ion-android-arrow-dropright-circle"></i
-              ></a>
-            </div>
-          </div>
-          <div class="category-list">
-            <div class="category-thumb">
-              <a href="shop-4-column.html">
-                <img
-                  src="assets/images/product-image/organic/thumb-8.jpg"
-                  alt=""
-                />
-              </a>
-            </div>
-            <div class="desc-listcategoreis">
-              <div class="name_categories">
-                <h4>Fresh Vegetables</h4>
-              </div>
-              <span class="number_product">17 Products</span>
-              <a href="shop-4-column.html">
-                Shop Now <i class="ion-android-arrow-dropright-circle"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <!-- Single item -->
+
       </div>
     </div>
   </section>
@@ -187,7 +41,45 @@
 export default {
   name: "Caategories",
   data() {
-    return {};
+    return {
+      categories:[
+        {
+          link: '#',
+          img: 'assets/images/product-image/organic/thumb-1.jpg',
+          name: 'Fresh Vegetables',
+          count: 17,
+
+        },
+        {
+          link: '#',
+          img: 'assets/images/product-image/organic/thumb-1.jpg',
+          name: 'Fresh Vegetables',
+          count: 17,
+
+        },
+        {
+          link: '#',
+          img: 'assets/images/product-image/organic/thumb-1.jpg',
+          name: 'Fresh Vegetables',
+          count: 17,
+
+        },
+        {
+          link: '#',
+          img: 'assets/images/product-image/organic/thumb-1.jpg',
+          name: 'Fresh Vegetables',
+          count: 17,
+
+        },
+        {
+          link: '#',
+          img: 'assets/images/product-image/organic/thumb-1.jpg',
+          name: 'Fresh Vegetables',
+          count: 17,
+
+        }
+      ]
+    };
   },
 };
 </script>

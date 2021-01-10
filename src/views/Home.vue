@@ -13,18 +13,19 @@
 
       <Categories />
 
-      <HotDeals />
+      <!-- <HotDeals />
 
       <Banner />
 
       <Featured />
 
-      <Banner2 />
-
+      -->
+      <Banner2 /> 
+      <!--
       <Recent />
 
       <Brand />
-
+      -->
       <Footer/>
     </div>
 
@@ -79,7 +80,5 @@ export default {
 </script>
 
 <style scoped>
-.bg-img1 {
-  background-image: url(/assets/images/slider-image/sample-1.jpg);
-}
+
 </style>

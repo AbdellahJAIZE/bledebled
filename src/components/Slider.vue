@@ -3,19 +3,20 @@
     <div class="slider-active-3 owl-carousel slider-hm8 owl-dot-style">
       <!-- Slider Single Item Start -->
       <div
-        class="slider-height-6 d-flex align-items-start justify-content-start bg-img bg-img1"
+        class="slider-height-6 d-flex align-items-start justify-content-start bg-img"
+        style="background-image: url(/assets/images/slider-image/couscous.jpg);"
       >
         <div class="container">
           <div class="slider-content-1 slider-animated-1 text-left">
-            <span class="animated">NOT FRIED NOT BAKED</span>
+            <span class="animated">{{item1.text1}}</span>
             <h1 class="animated">
-              Freeze Dried Fruits <br />
-              Pineapple Coconut
+             {{item1.text2}}  <br />
+              {{item1.text3}}
             </h1>
             <p class="animated">
-              Free Shipping On Qualified Orders Over $35
+              {{item1.text4}}
             </p>
-            <a href="shop-4-column.html" class="shop-btn animated">SHOP NOW</a>
+            <a href="#" class="shop-btn animated">SHOP NOW</a>
           </div>
         </div>
       </div>
@@ -23,17 +24,17 @@
       <!-- Slider Single Item Start -->
       <div
         class="slider-height-6 d-flex align-items-start justify-content-start bg-img"
-        style="background-image: url(assets/images/slider-image/sample-2.jpg);"
+        style="background-image: url(assets/images/slider-image/farine.jpg);"
       >
         <div class="container">
           <div class="slider-content-1 slider-animated-1 text-left">
-            <span class="animated">100% NATURAL</span>
+            <span class="animated">{{item2.text1}}</span>
             <h1 class="animated">
-              Organic Fruits <br />
-              Summer Drinks
+              {{item2.text2}} <br />
+              {{item2.text3}}
             </h1>
-            <p class="animated">fresh New pack Brusting Fruits</p>
-            <a href="shop-4-column.html" class="shop-btn animated">SHOP NOW</a>
+            <p class="animated">{{item2.text4}}</p>
+            <a href="#" class="shop-btn animated">SHOP NOW</a>
           </div>
         </div>
       </div>
@@ -46,7 +47,20 @@
 export default {
   name: "Slider",
   data() {
-    return {};
+    return {
+      item1:{
+        text1: "Couscous Complet",
+        text2: 'Bien Monger,',
+        text3: 'Pour mieux vivre',
+        text4: 'Ultra Rapide',
+      },
+      item2:{
+        text1: "Farine d'orge",
+        text2: 'Bien Monger,',
+        text3: 'Pour mieux vivre',
+        text4: 'Ultra Rapide',
+      }
+    };
   },
 };
 </script>

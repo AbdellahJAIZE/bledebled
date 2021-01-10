@@ -12,8 +12,8 @@
                 class="img-responsive"
               />
               <div class="single-static-meta">
-                <h4>Free Shipping</h4>
-                <p>On all orders over $75.00</p>
+                <h4>Expédition</h4>
+                <p>Amana - Poste Maroc</p>
               </div>
             </div>
           </div>
@@ -29,8 +29,8 @@
                 class="img-responsive"
               />
               <div class="single-static-meta">
-                <h4>Free Returns</h4>
-                <p>Returns are free within 9 days</p>
+                <h4>Tout le Maroc</h4>
+                <p>Expédition vers tout le Maroc</p>
               </div>
             </div>
           </div>
@@ -46,8 +46,8 @@
                 class="img-responsive"
               />
               <div class="single-static-meta">
-                <h4>100% Payment Secure</h4>
-                <p>Your payment are safe with us.</p>
+                <h4>100% Sécurisé</h4>
+                <p>Vos paiements sont en sécurité.</p>
               </div>
             </div>
           </div>
@@ -61,8 +61,8 @@
                 class="img-responsive"
               />
               <div class="single-static-meta">
-                <h4>Support 24/7</h4>
-                <p>Contact us 24 hours a day</p>
+                <h4>Un soutien 24/7</h4>
+                <p>Contactez-nous 24 heures sur 24</p>
               </div>
             </div>
           </div>
