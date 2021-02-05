@@ -42,42 +42,67 @@ export default {
   name: "Caategories",
   data() {
     return {
+      
+
       categories:[
         {
           link: '#',
           img: 'assets/images/product-image/organic/thumb-1.jpg',
-          name: 'Fresh Vegetables',
+          name: 'couscous',
           count: 17,
-
         },
         {
           link: '#',
           img: 'assets/images/product-image/organic/thumb-1.jpg',
-          name: 'Fresh Vegetables',
+          name: 'Avoine',
           count: 17,
-
         },
         {
           link: '#',
           img: 'assets/images/product-image/organic/thumb-1.jpg',
-          name: 'Fresh Vegetables',
+          name: 'Hssoua',
           count: 17,
-
         },
         {
           link: '#',
           img: 'assets/images/product-image/organic/thumb-1.jpg',
-          name: 'Fresh Vegetables',
+          name: 'graine',
           count: 17,
-
-        },
-        {
+        },{
           link: '#',
           img: 'assets/images/product-image/organic/thumb-1.jpg',
-          name: 'Fresh Vegetables',
+          name: 'Zemita',
           count: 17,
+        },{
+          link: '#',
+          img: 'assets/images/product-image/organic/thumb-1.jpg',
+          name: 'Blé',
+          count: 17,
+        },{
+          link: '#',
+          img: 'assets/images/product-image/organic/thumb-1.jpg',
+          name: 'Herbes',
+          count: 17,
+        },{
+          link: '#',
+          img: 'assets/images/product-image/organic/thumb-1.jpg',
+          name: 'farine',
+          count: 17,
+        },{
+          link: '#',
+          img: 'assets/images/product-image/organic/thumb-1.jpg',
+          name: 'dchicha',
+          count: 17,
+        },{
+          link: '#',
+          img: 'assets/images/product-image/organic/thumb-1.jpg',
+          name: 'berkoukech',
+          count: 17,
+        },
 
-        }
+
+
+
       ]
     };
   },

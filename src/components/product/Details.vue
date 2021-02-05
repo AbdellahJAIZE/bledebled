@@ -1,84 +1,162 @@
 <template>
-  <section class="best-sells-area mb-30px">
+  <section class="product-details-area mtb-60px">
     <div class="container">
-      <!-- Section Title Start -->
       <div class="row">
-        <div class="col-md-12">
-          <div class="section-title">
-            <h2>Les meilleures ventes</h2>
-          </div>
-        </div>
-      </div>
-      <!-- Section Title End -->
-
-      <div class="best-sell-slider owl-carousel owl-nav-style">
-        <article
-          v-for="article in BestSellers"
-          :key="article"
-          class="list-product"
-        >
-          <div class="img-block">
-            <a :href="'/product?id='+article.id" class="thumbnail">
-              <img class="first-img" src="assets/images/product-image/tawfik/1.jpg" alt="" />
-              <img class="second-img" src="assets/images/product-image/tawfik/1.jpg" alt="" />
-            </a>
-            <div class="quick-view">
+        <div class="col-xl-6 col-lg-6 col-md-12">
+          <div class="product-details-img product-details-tab">
+            <div class="zoompro-wrap zoompro-2">
+              <div class="zoompro-border zoompro-span">
+                <img
+                  class="zoompro"
+                  src="assets/images/product-image/tawfik/1.jpg"
+                  data-zoom-image="assets/images/product-image/tawfik/1.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div id="gallery" class="product-dec-slider-2">
               <a
-                class="quick_view"
-                :href="'/product?id='+article.id"
-                data-link-action="quickview"
-                title="Quick view"
-                data-toggle="modal"
-                data-target="#exampleModal"
+                class="active"
+                data-image="assets/images/product-image/tawfik/1.jpg"
+                data-zoom-image="assets/images/product-image/tawfik/1.jpg"
               >
-                <i class="ion-ios-search-strong"></i>
+                <img
+                  src="assets/images/product-image/tawfik/1.jpg"
+                  alt=""
+                />
+              </a>
+              
+              <a
+                data-image="assets/images/product-image/tawfik/1.jpg"
+                data-zoom-image="assets/images/product-image/tawfik/1.jpg"
+              >
+                <img
+                  src="assets/images/product-image/tawfik/1.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                data-image="assets/images/product-image/tawfik/1.jpg"
+                data-zoom-image="assets/images/product-image/tawfik/1.jpg"
+              >
+                <img
+                  src="assets/images/product-image/tawfik/1.jpg"
+                  alt=""
+                />
               </a>
             </div>
           </div>
-          <ul class="product-flag">
-            <li class="new">New</li>
-          </ul>
-          <div class="product-decs">
-            
-            <h2>
-              <a :href="'/product?id='+article.id" class="product-link">
-                {{ article.nameFr }}
-              </a>
-            </h2>
-            <div class="rating-product">
-              <i
-                v-for="el in 5"
-                :key="el"
-                class="ion-android-star"
-              ></i>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-12">
+          <div class="product-details-content">
+            <h2>{{article.nameFr}}</h2>
+            <p class="reference">Reference:<span> {{ article.id }} </span></p>
+            <div class="pro-details-rating-wrap">
+              <div class="rating-product">
+                <i class="ion-android-star"></i>
+                <i class="ion-android-star"></i>
+                <i class="ion-android-star"></i>
+                <i class="ion-android-star"></i>
+                <i class="ion-android-star"></i>
+              </div>
+              
             </div>
             <div class="pricing-meta">
               <ul>
-                <li class="old-price">{{ article.priceMax + (article.priceMax * 5 /100 ) }} MAD</li>
-                <li class="current-price">{{ article.priceMax }} MAD</li>
-                <li class="discount-price">-{{ 5 }}%</li>
+                <li class="old-price not-cut">{{ article.priceMax }} MAD</li>
+              </ul>
+            </div>
+            <div class="pro-details-list">
+              <ul>
+                
+                <li>- {{ article.categoryFr }}</li>
+                <li>- {{ article.wheght }}</li>
+                
+              </ul>
+            </div>
+            <div class="pro-details-quality mt-0px">
+              <div class="cart-plus-minus">
+                <input
+                  class="cart-plus-minus-box"
+                  type="text"
+                  name="qtybutton"
+                  value="1"
+                />
+              </div>
+              <div class="pro-details-cart btn-hover">
+                <a > +212 6 0000000</a>
+              </div>
+            </div>
+            <div class="pro-details-wish-com">
+              
+            </div>
+            <div class="pro-details-social-info">
+              <span>Share</span>
+              <div class="social-info">
+                <ul>
+                  <li>
+                    <a href="#"><i class="ion-social-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="ion-social-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="ion-social-google"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="ion-social-instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="pro-details-policy">
+              <ul>
+                <li>
+                  <img src="assets/images/icons/policy.png" alt="" /><span
+                    >Security Policy </span
+                  >
+                </li>
+                <li>
+                  <img src="assets/images/icons/policy-2.png" alt="" /><span
+                    >Delivery Policy </span
+                  >
+                </li>
+                <li>
+                  <img src="assets/images/icons/policy-3.png" alt="" /><span
+                    >Return Policy </span
+                  >
+                </li>
               </ul>
             </div>
           </div>
-          <div class="add-to-link">
-            <ul>
-              <li class="cart">
-                <a class="cart-btn" :href="'/product?id='+article.id">ACHETER </a>
-              </li>
-            </ul>
-          </div>
-        </article>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <script>
+//import HelloWorld from '@/components/HelloWorld.vue'
+
 export default {
-  name: "BestSeller",
+  name: "Blank",
   data() {
     return {
-      BestSellers: [
+      article: {
+        id: 1,
+        nameFr: "Couscous Complet",
+        nameAr: "كسكس القمح الكامل ",
+        bioFR:
+          "·Le couscous de blé entier est une excellente source de vitamines qui aident à augmenter les niveaux d’énergie corporelle et à améliorer les fonctions cérébrales. Il est également riche en glucides qui sont une excellente source d’énergie dont le corps a besoin pour les activités quotidiennes .lors de la cuisson du couscous, petit grain de pâte devient un peu plus grand et adoucissant, Ils sont généralement cuits avec des légumes et de la viande pour un plat plein et nutritif.",
+        bioAr:
+          "يعد  كسكس القمح الكامل  مصدراً ممتازاً لمجموعة من الفيتامينات، التي تساعد على زيادةمستويات الطاقة في الجسم وتحسين وظائف الدماغ. وكذالك التخفيف من حدة الالتهابات المزمنة.،والحماية من سرطان القولون.وحماية الأطفال من الربو، كما أنه غني  بالكربوهيدرات التي هي مصدر ممتاز للطاقة التي يحتاجها الجسم لممارسة الأنشطة اليومية.عند طهو الكسكس فإن الحبات الصغيرة من العجين تزداد حجماً بعض الشيء وتصبح لينة ولذيذة، وعادة ما يطهى إلى جانب الخضراوات واللحم لطبق متكامل غني بالمواد الغذائية",
+        priceMax: "25",
+        priceMin: "22,5",
+        categoryFr: "couscous",
+        categoryAr: "كسكس",
+        wheght: "1kg",
+      },
+      Articles: [
         {
           id: 1,
           nameFr: "Couscous Complet",

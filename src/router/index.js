@@ -11,6 +11,27 @@ const routes = [
     component: function () {
       return import('../views/Home.vue')
     }
+  },
+  {
+    path: '/shop',
+    name: 'Shop',
+    component: function () {
+      return import('../views/Shop.vue')
+    }
+  },
+  {
+    path: '/product',
+    name: 'Product',
+    component: function () {
+      return import('../views/Product.vue')
+    }
+  },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: function () {
+      return import('../views/Contact.vue')
+    }
   }
 ]
 
