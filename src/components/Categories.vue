@@ -25,9 +25,9 @@
             </div>
             <div class="desc-listcategoreis">
               <div class="name_categories">
-                <h4>{{cat.name}}</h4>
+                <h4 style="color: black;">{{cat.name}}</h4>
               </div>
-              <span class="number_product"> {{cat.count}} Produits</span>
+              <span style="color: black;" class="number_product"> {{cat.count}} Produits</span>
             </div>
           </div>
         </div>
@@ -47,55 +47,45 @@ export default {
       categories:[
         {
           link: '#',
-          img: 'assets/images/product-image/organic/thumb-1.jpg',
+          img: 'assets/images/product-image/organic/couscous.jpg',
           name: 'couscous',
           count: 17,
         },
         {
           link: '#',
-          img: 'assets/images/product-image/organic/thumb-1.jpg',
+          img: 'assets/images/product-image/organic/avoine.jpg',
           name: 'Avoine',
           count: 17,
         },
         {
           link: '#',
-          img: 'assets/images/product-image/organic/thumb-1.jpg',
+          img: 'assets/images/product-image/organic/hssoua.jpg',
           name: 'Hssoua',
           count: 17,
         },
         {
           link: '#',
-          img: 'assets/images/product-image/organic/thumb-1.jpg',
-          name: 'graine',
-          count: 17,
-        },{
-          link: '#',
-          img: 'assets/images/product-image/organic/thumb-1.jpg',
+          img: 'assets/images/product-image/organic/zemita.jpg',
           name: 'Zemita',
           count: 17,
         },{
           link: '#',
-          img: 'assets/images/product-image/organic/thumb-1.jpg',
+          img: 'assets/images/product-image/organic/ble.jpg',
           name: 'Blé',
           count: 17,
         },{
           link: '#',
-          img: 'assets/images/product-image/organic/thumb-1.jpg',
-          name: 'Herbes',
-          count: 17,
-        },{
-          link: '#',
-          img: 'assets/images/product-image/organic/thumb-1.jpg',
+          img: 'assets/images/product-image/organic/farine.jpg',
           name: 'farine',
           count: 17,
         },{
           link: '#',
-          img: 'assets/images/product-image/organic/thumb-1.jpg',
+          img: 'assets/images/product-image/organic/dchicha.jpg',
           name: 'dchicha',
           count: 17,
         },{
           link: '#',
-          img: 'assets/images/product-image/organic/thumb-1.jpg',
+          img: 'assets/images/product-image/organic/berkoukch.jpg',
           name: 'berkoukech',
           count: 17,
         },
