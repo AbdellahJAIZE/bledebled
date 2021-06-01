@@ -8,7 +8,7 @@
             <!-- footer logo -->
             <div class="footer-logo">
               <a href="index.html"
-                ><img src="assets/images/logo/logo1.jpg" alt=""
+                ><img src="assets/images/logo/logo1.png" alt=""
               /></a>
             </div>
             <!-- footer logo -->
@@ -48,7 +48,7 @@
                 src="/assets/images/logo.png"
                 style="display: block; margin-left: auto; margin-right: auto; width: 50%;"
                 height="273"
-                width="385"
+                width="290"
               />
             </div>
           </div>
@@ -63,7 +63,7 @@ export default {
   name: "Footer",
   data() {
     return {
-      phone: "(+212) 6 00000000",
+      phone: "(+212) 6 61566046",
     };
   },
 };

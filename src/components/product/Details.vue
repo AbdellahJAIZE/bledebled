@@ -74,7 +74,13 @@
                 
               </ul>
             </div>
+            <label>
+              Pour commander veuillez contacter ce numéro. <br>
+            </label>
             <div class="pro-details-quality mt-0px">
+              
+              
+              <!--
               <div class="cart-plus-minus">
                 <input
                   class="cart-plus-minus-box"
@@ -83,10 +89,17 @@
                   value="1"
                 />
               </div>
+              -->
+              
               <div class="pro-details-cart btn-hover">
-                <a > +212 6 0000000</a>
+                <a > (+212) 6 61566046 </a>
               </div>
+             
+        
+              
+              
             </div>
+            
             <div class="pro-details-wish-com">
               
             </div>
@@ -678,5 +691,11 @@ export default {
       ],
     };
   },
+  mounted(){
+    this.article = this.Articles.filter(article => article.id == this.$route.query.id)[0]
+  }
 };
 </script>
+
+
+

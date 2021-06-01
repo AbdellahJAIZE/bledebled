@@ -5,9 +5,9 @@
     <div id="main">
       <Header />
       <Title />
-      <Details />
+      <Details  />
       <Description />
-      <!-- <Slider />
+      <!--<Slider />
 
       <Static />
 

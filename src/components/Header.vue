@@ -32,7 +32,7 @@
               <!--Contact info Start -->
               <div class="contact-link">
                 <div class="phone">
-                  <p>Call us:</p>
+                  <p>Appelez Nous :</p>
                   <a :href="'tel:'+phone">{{phone}}</a>
                 </div>
               </div>
@@ -68,9 +68,9 @@ export default {
   name: "Header",
   data() {
     return {
-      phone: '(+212)600000000',
+      phone: '(+212) 6 61566046',
       links:[
-        { Name:'Home', Path:'/'},
+        { Name:'Accueil', Path:'/'},
         { Name:'Boutique', Path:'/shop'},
         { Name:'Contactez-nous', Path:'/contact'},
       ]
@@ -78,3 +78,4 @@ export default {
   },
 };
 </script>
+

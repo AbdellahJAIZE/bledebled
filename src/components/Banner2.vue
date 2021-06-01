@@ -1,7 +1,7 @@
 <template>
   <div class="banner-area-2">
     <div class="container">
-      <div class="row">
+      <div style="" class="row" >
         <div class="col-md-12">
           <div class="banner-inner">
             <a href=""
@@ -13,7 +13,6 @@
     </div>
   </div>
 </template>
-
 <script>
 
 export default {

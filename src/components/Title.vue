@@ -4,10 +4,10 @@
       <div class="row">
         <div class="col-md-12">
           <div class="breadcrumb-content">
-            <h1 class="breadcrumb-hrading">Shop Page</h1>
+            <h1 class="breadcrumb-hrading">Page de la boutique </h1>
             <ul class="breadcrumb-links">
-              <li><a href="index.html">Home</a></li>
-              <li>Shop Grid</li>
+              <li><a href="/">Accueil </a></li>
+              <li>Grille de magasin </li>
             </ul>
           </div>
         </div>
