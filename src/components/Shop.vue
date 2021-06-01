@@ -46,21 +46,11 @@
         >
           <div class="img-block">
             <a :href="'/product?id='+article.id" class="thumbnail">
-              <img class="first-img" src="assets/images/product-image/tawfik/1.jpg" alt="" />
-              <img class="second-img" src="assets/images/product-image/tawfik/1.jpg" alt="" />
+              <img class="first-img" :src="'assets/images/product-image/imgs/'+article.id+'.jpg'" alt="" />
+              <img class="second-img" :src="'assets/images/product-image/imgs/'+article.id+'.jpg'" alt="" />
+            
             </a>
-            <div class="quick-view">
-              <a
-                class="quick_view"
-                :href="'/product?id='+article.id"
-                data-link-action="quickview"
-                title="Quick view"
-                data-toggle="modal"
-                data-target="#exampleModal"
-              >
-                <i class="ion-ios-search-strong"></i>
-              </a>
-            </div>
+            
           </div>
           <ul class="product-flag">
             <li class="new">New</li>

@@ -19,8 +19,8 @@
         >
           <div class="img-block">
             <a :href="'/product?id='+article.id" class="thumbnail">
-              <img class="first-img" src="assets/images/product-image/tawfik/1.jpg" alt="" />
-              <img class="second-img" src="assets/images/product-image/tawfik/1.jpg" alt="" />
+              <img class="first-img" :src="'assets/images/product-image/imgs/'+article.id+'.jpg'" alt="" />
+              <img class="second-img" :src="'assets/images/product-image/imgs/'+article.id+'.jpg'" alt="" />
             </a>
             <div class="quick-view">
               <a

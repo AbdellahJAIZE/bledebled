@@ -8,8 +8,8 @@
               <div class="zoompro-border zoompro-span">
                 <img
                   class="zoompro"
-                  src="assets/images/product-image/tawfik/1.jpg"
-                  data-zoom-image="assets/images/product-image/tawfik/1.jpg"
+                  :src="'assets/images/product-image/imgs/'+article.id+'.jpg'"
+                  :data-zoom-image="'assets/images/product-image/imgs/'+article.id+'.jpg'"
                   alt=""
                 />
               </div>
@@ -17,30 +17,30 @@
             <div id="gallery" class="product-dec-slider-2">
               <a
                 class="active"
-                data-image="assets/images/product-image/tawfik/1.jpg"
-                data-zoom-image="assets/images/product-image/tawfik/1.jpg"
+                :data-image="'assets/images/product-image/imgs/'+article.id+'.jpg'"
+                :data-zoom-image="'assets/images/product-image/imgs/'+article.id+'.jpg'"
               >
                 <img
-                  src="assets/images/product-image/tawfik/1.jpg"
+                  :src="'assets/images/product-image/imgs/'+article.id+'.jpg'"
                   alt=""
                 />
               </a>
               
               <a
-                data-image="assets/images/product-image/tawfik/1.jpg"
-                data-zoom-image="assets/images/product-image/tawfik/1.jpg"
+                :data-image="'assets/images/product-image/imgs/'+article.id+'.jpg'"
+                :data-zoom-image="'assets/images/product-image/imgs/'+article.id+'.jpg'"
               >
                 <img
-                  src="assets/images/product-image/tawfik/1.jpg"
+                  :src="'assets/images/product-image/imgs/'+article.id+'.jpg'"
                   alt=""
                 />
               </a>
               <a
-                data-image="assets/images/product-image/tawfik/1.jpg"
-                data-zoom-image="assets/images/product-image/tawfik/1.jpg"
+                :data-image="'assets/images/product-image/imgs/'+article.id+'.jpg'"
+                :data-zoom-image="'assets/images/product-image/imgs/'+article.id+'.jpg'"
               >
                 <img
-                  src="assets/images/product-image/tawfik/1.jpg"
+                  :src="'assets/images/product-image/imgs/'+article.id+'.jpg'"
                   alt=""
                 />
               </a>
